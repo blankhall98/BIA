@@ -1,20 +1,23 @@
 from bia import Data_Analytic
 
 inputs = {
+    'firm_name': 'Python Zero 2 Hero!',
     'data_route': './data/db.csv'
 }
 
-#MAIN FUNCTION
+### MAIN FUNCTION ###
+
 def main():
-    #initialize class
+    #1. initialize class...
     DA = Data_Analytic(inputs)
-    #print previus database
-    print(DA.data)
-    #add new record
-    DA.add_record()
-    #print new database
-    print(DA.data)
-    #show report
+
+    #print previus database...
+    #print(DA.data)
+
+    #add new record...
+    #DA.add_record()
+
+    #show report...
     DA.graph_analytics()
 
 if __name__ == '__main__':
